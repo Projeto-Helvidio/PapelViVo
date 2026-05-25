@@ -29,6 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="#sementes">Sementes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tintas">Pigmentos Naturais</a></li>
                     <li class="nav-item"><a class="nav-link" href="#passo-a-passo">Passo a Passo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estufa">Estufa com Arduino Uno</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,7 @@
                     <h1 class="display-4 fw-bold mb-4">Dê vida ao papel que você descarta.</h1>
                     
                     <p class="lead mb-5" style="font-size: 1.15rem; line-height: 1.6;">
-                        O projeto <strong>"Papel Vivo"</strong> é uma iniciativa escolar interdisciplinar focada na sustentabilidade, que transforma o papel descartado nas instituições de ensino em "papel semente" artesanal ecológico. Para garantir a secagem segura sem danificar a germinação das sementes, o processo produtivo utiliza uma estufa automatizada controlada por <strong>Arduino</strong>, alimentada por energia limpa proveniente de um sistema de energia solar. Além de promover a educação ambiental e o engajamento prático em tecnologia, ciências e artes para os alunos de tempo integral, a proposta inclui a criação de um site para divulgar o passo a passo da iniciativa, permitindo que o modelo sustentável seja facilmente replicado por outras comunidades escolares.
+                        O projeto <strong>"Papel Vivo"</strong> é uma iniciativa escolar interdisciplinar focada na sustentabilidade, que transforma o papel descartado nas instituições de ensino em "papel semente" artesanal ecológico. Para garantir a secagem segura sem danificar a germinação das sementes, o processo produtivo utiliza uma estufa automatizada controlada por <strong>Arduino Uno</strong>, alimentada por energia limpa proveniente de um sistema de energia solar. Além de promover a educação ambiental e o engajamento prático em tecnologia, ciências e artes para os alunos de tempo integral, a proposta inclui a criação de um site para divulgar o passo a passo da iniciativa, permitindo que o modelo sustentável seja facilmente replicado por outras comunidades escolares.
                     </p>
                     
                     <a href="#passo-a-passo" class="btn btn-success btn-lg text-white fw-bold px-5 rounded-pill shadow">Veja como fazemos <i class="fa-solid fa-arrow-down ms-2"></i></a>
@@ -99,7 +100,7 @@
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
                         <img src="img/maria.jpg" alt="Maria Beatriz" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Maria Beatriz Rodrigues Moreira</h6>
-                        <p class="text-muted small mb-0">Pesquisa e Produção</p>
+                        <p class="text-muted small mb-0">Aluna</p>
                     </div>
                 </div>
                 
@@ -107,7 +108,7 @@
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
                         <img src="img/sara.jpg" alt="Sara Raiane" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Sara Raiane de Sousa Mota</h6>
-                        <p class="text-muted small mb-0">Design e Tintas</p>
+                        <p class="text-muted small mb-0">Aluna</p>
                     </div>
                 </div>
 
@@ -115,7 +116,7 @@
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
                         <img src="img/kelvin.jpg" alt="Kelvin Dias" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Kelvin Dias Rodrigues</h6>
-                        <p class="text-muted small mb-0">Moldagem e Secagem</p>
+                        <p class="text-muted small mb-0">Aluno</p>
                     </div>
                 </div>
 
@@ -123,7 +124,7 @@
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
                         <img src="img/lara.jpg" alt="Lara Beatryz" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Lara Beatryz Medeiros Brito</h6>
-                        <p class="text-muted small mb-0">Seleção de Sementes</p>
+                        <p class="text-muted small mb-0">Aluna</p>
                     </div>
                 </div>
 
@@ -131,7 +132,7 @@
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
                         <img src="img/livia.jpg" alt="Lívia Maria" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Lívia Maria Guimarães Diniz</h6>
-                        <p class="text-muted small mb-0">Apresentação e Mídia</p>
+                        <p class="text-muted small mb-0">Aluna</p>
                     </div>
                 </div>
             </div>
@@ -259,6 +260,32 @@
             </div>
         </div>
     </section>
+
+    <section id="arudino" class="py-5 bg-success text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Coluna Esquerda: Texto -->
+                <div class="col-lg-7 text-start mb-5 mb-lg-0 pe-lg-5">
+                    <h1 class="display-4 fw-bold mb-4">Estufa utilizando Arduino Uno</h1>
+                    
+                    <p class="lead mb-5" style="font-size: 1.15rem; line-height: 1.6;">
+                        O Arduino será responsável pelo controle automático da temperatura da estufa utilizada na secagem do Papel Vivo. Por meio de um sensor de temperatura, o sistema monitora continuamente o ambiente interno da estufa, ligando ou desligando as lâmpadas de aquecimento conforme a necessidade. Dessa forma, a secagem do papel ocorre de maneira controlada, evitando temperaturas excessivas que possam danificar as sementes presentes no papel reciclado. O sistema automatizado também contribui para maior eficiência energética e segurança durante o processo de secagem.
+                    </p>
+                    <a href="https://github.com/escolaHelvidioNunes/PapellVivo" target="_blank" class="text-decoration-none">
+                        <span class="badge bg-success text-white mb-3 px-4 py-2 rounded-pill shadow-sm fs-6 hover-card">
+                            <i class="fa-brands fa-github me-2 fs-5"></i> Repositório no GitHub
+                        </span>
+                    </a>
+
+                </div>
+                
+                <!-- Coluna Direita: Imagem -->
+                <div class="col-lg-5">
+                    <img src="img/img_esquema.jpeg" alt="Professores e Alunos do Projeto" class="img-fluid rounded-4 shadow-lg w-100 border border-3 border-white" style="object-fit: cover; max-height: 500px;">
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
