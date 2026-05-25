@@ -15,7 +15,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand text-success fw-bold d-flex align-items-center gap-2" href="#inicio">
-                <i class="fa-solid fa-seedling fs-3"></i> Papel Vivo
+                <!-- Logo atualizada com imagem circular -->
+                <img src="img/logo.jpeg" alt="Logo Papel Vivo" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+                Papel Vivo
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -32,16 +34,27 @@
         </div>
     </nav>
 
-    <header id="inicio" class="hero-section text-center text-dark d-flex align-items-center">
-        <div class="container">
-            <span class="badge bg-success text-white mb-3 px-3 py-2 rounded-pill shadow-sm">Projeto Escolar Sustentável</span>
-            <h1 class="display-3 fw-bold mb-4">Dê vida ao papel que você descarta.</h1>
-            
-            <p class="lead mb-5 mx-auto text-md-center text-start" style="max-width: 900px; font-size: 1.15rem; line-height: 1.6;">
-                O projeto <strong>"Papel Vivo"</strong> é uma iniciativa escolar interdisciplinar focada na sustentabilidade, que transforma o papel descartado nas instituições de ensino em "papel semente" artesanal ecológico. Para garantir a secagem segura sem danificar a germinação das sementes, o processo produtivo utiliza uma estufa automatizada controlada por <strong>Arduino</strong>, alimentada por energia limpa proveniente de um sistema de energia solar. Além de promover a educação ambiental e o engajamento prático em tecnologia, ciências e artes para os alunos de tempo integral, a proposta inclui a criação de um site para divulgar o passo a passo da iniciativa, permitindo que o modelo sustentável seja facilmente replicado por outras comunidades escolares.
-            </p>
-            
-            <a href="#passo-a-passo" class="btn btn-success btn-lg text-white fw-bold px-5 rounded-pill shadow">Veja como fazemos <i class="fa-solid fa-arrow-down ms-2"></i></a>
+    <!-- Introdução dividida (Texto à Esquerda / Imagem à Direita) com Gradiente -->
+    <header id="inicio" class="hero-section d-flex align-items-center" style="background: linear-gradient(to right, var(--verde-claro), var(--verde-principal)); min-height: 90vh;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Coluna Esquerda: Texto -->
+                <div class="col-lg-7 text-start mb-5 mb-lg-0 pe-lg-5">
+                    <span class="badge bg-success text-white mb-3 px-3 py-2 rounded-pill shadow-sm">Projeto Escolar Sustentável</span>
+                    <h1 class="display-4 fw-bold mb-4">Dê vida ao papel que você descarta.</h1>
+                    
+                    <p class="lead mb-5" style="font-size: 1.15rem; line-height: 1.6;">
+                        O projeto <strong>"Papel Vivo"</strong> é uma iniciativa escolar interdisciplinar focada na sustentabilidade, que transforma o papel descartado nas instituições de ensino em "papel semente" artesanal ecológico. Para garantir a secagem segura sem danificar a germinação das sementes, o processo produtivo utiliza uma estufa automatizada controlada por <strong>Arduino</strong>, alimentada por energia limpa proveniente de um sistema de energia solar. Além de promover a educação ambiental e o engajamento prático em tecnologia, ciências e artes para os alunos de tempo integral, a proposta inclui a criação de um site para divulgar o passo a passo da iniciativa, permitindo que o modelo sustentável seja facilmente replicado por outras comunidades escolares.
+                    </p>
+                    
+                    <a href="#passo-a-passo" class="btn btn-success btn-lg text-white fw-bold px-5 rounded-pill shadow">Veja como fazemos <i class="fa-solid fa-arrow-down ms-2"></i></a>
+                </div>
+                
+                <!-- Coluna Direita: Imagem -->
+                <div class="col-lg-5">
+                    <img src="img/professores.jpeg" alt="Professores e Alunos do Projeto" class="img-fluid rounded-4 shadow-lg w-100 border border-3 border-white" style="object-fit: cover; max-height: 500px;">
+                </div>
+            </div>
         </div>
     </header>
 
@@ -54,25 +67,22 @@
             <div class="row justify-content-center g-4 mb-5 pb-4 border-bottom">
                 <div class="col-sm-6 col-md-4">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-dark d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-                        </div>
+                        <img src="img/james.jpg" alt="James Tatieres" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">James Tatieres</h6>
                         <p class="text-muted small mb-0">Professor Orientador</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-dark d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-                        </div>
+                        <img src="img/leonardo.jpg" alt="Leonardo" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Leonardo</h6>
                         <p class="text-muted small mb-0">Professor Orientador</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-dark d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
+                        <!-- João Sergio mantido com o placeholder -->
+                        <div class="avatar-bg mx-auto mb-3 text-white bg-dark d-flex align-items-center justify-content-center rounded-circle fs-3 shadow" style="width: 80px; height: 80px;">
                             <i class="fa-solid fa-chalkboard-user"></i>
                         </div>
                         <h6 class="fw-bold mb-1">João Sergio</h6>
@@ -87,9 +97,7 @@
             <div class="row justify-content-center g-4">
                 <div class="col-6 col-md-4 col-lg">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-success d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
+                        <img src="img/maria.jpg" alt="Maria Beatriz" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Maria Beatriz Rodrigues Moreira</h6>
                         <p class="text-muted small mb-0">Pesquisa e Produção</p>
                     </div>
@@ -97,9 +105,7 @@
                 
                 <div class="col-6 col-md-4 col-lg">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-success d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
+                        <img src="img/sara.jpg" alt="Sara Raiane" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Sara Raiane de Sousa Mota</h6>
                         <p class="text-muted small mb-0">Design e Tintas</p>
                     </div>
@@ -107,9 +113,7 @@
 
                 <div class="col-6 col-md-4 col-lg">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-success d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
+                        <img src="img/kelvin.jpg" alt="Kelvin Dias" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Kelvin Dias Rodrigues</h6>
                         <p class="text-muted small mb-0">Moldagem e Secagem</p>
                     </div>
@@ -117,9 +121,7 @@
 
                 <div class="col-6 col-md-4 col-lg">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-success d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
+                        <img src="img/lara.jpg" alt="Lara Beatryz" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Lara Beatryz Medeiros Brito</h6>
                         <p class="text-muted small mb-0">Seleção de Sementes</p>
                     </div>
@@ -127,9 +129,7 @@
 
                 <div class="col-6 col-md-4 col-lg">
                     <div class="card border-0 shadow-sm p-3 h-100 bg-white hover-card">
-                        <div class="avatar-bg mx-auto mb-3 text-white bg-success d-flex align-items-center justify-content-center rounded-circle fs-3" style="width: 80px; height: 80px;">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
+                        <img src="img/livia.jpg" alt="Lívia Maria" class="mx-auto mb-3 rounded-circle shadow" style="width: 80px; height: 80px; object-fit: cover;">
                         <h6 class="fw-bold mb-1">Lívia Maria Guimarães Diniz</h6>
                         <p class="text-muted small mb-0">Apresentação e Mídia</p>
                     </div>
@@ -182,25 +182,25 @@
             
             <div class="row g-4 justify-content-center">
                 <div class="col-6 col-md-3 text-center">
-                    <div class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; background-color: #2b2b2b; border: 4px solid white;"></div>
+                    <img src="img/carvao.jpeg" alt="Carvão Mineral" class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid white;">
                     <h5 class="fw-bold">Carvão Mineral</h5>
                     <p class="text-light small mt-2 px-2">Tons escuros intensos e marcações rústicas para contornos.</p>
                 </div>
                 
                 <div class="col-6 col-md-3 text-center">
-                    <div class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; background-color: #c33c23; border: 4px solid white;"></div>
+                    <img src="img/urucum.jpeg" alt="Urucum" class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid white;">
                     <h5 class="fw-bold">Urucum</h5>
                     <p class="text-light small mt-2 px-2">Pigmento natural que rende um vermelho terroso e vibrante.</p>
                 </div>
 
                 <div class="col-6 col-md-3 text-center">
-                    <div class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; background-color: #F4C430; border: 4px solid white;"></div>
+                    <img src="img/acafrao.jpeg" alt="Açafrão" class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid white;">
                     <h5 class="fw-bold">Açafrão</h5>
                     <p class="text-light small mt-2 px-2">Extração que proporciona um amarelo-ouro radiante e cheio de vida.</p>
                 </div>
 
                 <div class="col-6 col-md-3 text-center">
-                    <div class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; background-color: #5C4033; border: 4px solid white;"></div>
+                    <img src="img/cacau.jpeg" alt="Cacau" class="rounded-circle mx-auto mb-3 shadow hover-card" style="width: 120px; height: 120px; object-fit: cover; border: 4px solid white;">
                     <h5 class="fw-bold">Cacau</h5>
                     <p class="text-light small mt-2 px-2">Tons de marrom ricos e texturizados, com forte conexão à nossa terra.</p>
                 </div>
@@ -245,11 +245,6 @@
             <p class="mb-0"><i class="fa-solid fa-seedling text-success"></i> Projeto Papel Vivo - Sustentabilidade Escolar</p>
         </div>
     </footer>
-
-    <button id="darkModeToggle" class="btn btn-success rounded-circle shadow-lg position-fixed bottom-0 end-0 m-4 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; z-index: 1050; transition: all 0.4s ease;">
-        <i id="themeIcon" class="fa-solid fa-moon fs-4"></i>
-    </button>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
