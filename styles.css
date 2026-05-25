@@ -1,50 +1,8 @@
-/* Configurações Globais e Cores (Modo Claro) */
+/* Configurações Globais e Cores */
 :root {
     --verde-principal: #2B7A4B; /* Verde sustentável */
     --verde-claro: #E8F5E9;
     --verde-destaque: #1E5635;
-    --bg-hero-overlay: rgba(30, 86, 53, 0.85); /* Sobreposição verde da imagem inicial */
-}
-
-/* ==========================================================================
-   CONFIGURAÇÃO DO MODO ESCURO (DARK MODE)
-   ========================================================================== */
-[data-bs-theme="dark"] {
-    --verde-principal: #52b788; /* Verde menta brilhante para contraste */
-    --verde-claro: #1b2e22;    /* Fundo verde bem escuro para áreas de destaque */
-    --verde-destaque: #74c69d;
-    --bg-hero-overlay: rgba(15, 23, 18, 0.9); /* Overlay quase preto para a imagem */
-
-    body {
-        color: #e0e0e0;
-    }
-    .bg-light {
-        background-color: #121814 !important; /* Troca o fundo claro por um cinza/verde super escuro */
-    }
-    .card {
-        background-color: #1a231d !important; /* Cor interna dos cards */
-        color: #e0e0e0 !important;
-        border: 1px solid #253329 !important;
-    }
-    .navbar {
-        background-color: #0f1411 !important;
-        border-bottom: 1px solid #1a231d;
-    }
-    .navbar-nav .nav-link {
-        color: #adbad0 !important; /* Links do menu no modo escuro */
-    }
-    .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-        color: var(--verde-principal) !important;
-    }
-    .text-muted {
-        color: #a0aba3 !important; /* Texto secundário adaptado */
-    }
-    .border-success-subtle {
-        border-color: #2c3e33 !important;
-    }
-    footer {
-        background-color: #0b0e0c !important; /* Rodapé mais escuro */
-    }
 }
 
 /* ==========================================================================
@@ -59,8 +17,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    color: #333; /* Cor do texto no modo claro */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave de tema */
+    color: #333; /* Cor do texto padrão */
 }
 
 /* Sobrescrevendo o Bootstrap */
@@ -88,17 +45,9 @@ body {
     font-weight: 600;
 }
 
-/* Seção Hero - Início */
-.hero-section {
-    /* Usando a variável dinâmica para escurecer a imagem no Modo Escuro */
-    background: linear-gradient(var(--bg-hero-overlay), var(--bg-hero-overlay)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-    min-height: 90vh;
-    transition: background 0.5s ease; /* Suaviza a troca de cor de fundo */
-}
-
-/* Animações e Efeitos Visuais */
+/* Animações e Efeitos Visuais dos Cards */
 .hover-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .hover-card:hover {
     transform: translateY(-8px);
@@ -111,9 +60,4 @@ body {
 }
 .passo-numero:hover {
     transform: scale(1.1) rotate(5deg);
-}
-
-/* Animação do botão flutuante de Modo Escuro */
-#darkModeToggle:hover {
-    transform: scale(1.1) rotate(15deg);
 }
